@@ -11,8 +11,6 @@ class User(MongoModel):
     bmi = fields.FloatField()
 
 
-p1 = User(name = 'Yasha', 'age' = 26, 'bmi' = 23.5)
-
 
 @app.route("/new_patient", methods=['POST'])
 def new_patient():
