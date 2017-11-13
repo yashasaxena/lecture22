@@ -20,8 +20,7 @@ def new_patient():
     patient_age = patient_dict['age']
     patient_bmi = patient_dict['bmi']
 
-    new_p = User(name = patient_name[0], age = patient_age[0],
-                                                   bmi = patient_bmi[0])
+    new_p = User(name = patient_name[0], age = patient_age[0],bmi = patient_bmi[0])
     new_p.save()
 
     return "You did it!"
