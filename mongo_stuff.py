@@ -13,7 +13,7 @@ class User(MongoModel):
 
 
 
-@app.route("/new_patient", methods=['POST'])
+@app.route("/api/new_patient", methods=['POST'])
 def new_patient():
     patient_dict = request.json
     patient_name = patient_dict['name']
