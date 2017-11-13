@@ -3,6 +3,7 @@ from pymodm import MongoModel, fields
 from flask import Flask,request, jsonify
 import json
 
+app = Flask(__name__)
 connect("mongodb://localhost:27017/lec22_db")
 
 class User(MongoModel):
